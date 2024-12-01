@@ -51,8 +51,18 @@
             </div>
         @endforeach
         @if(session('user_id'))
-          <a href="{{ route('create') }}" class="btn btn-lg pull-xs-right btn-primary create">
+          <a href="{{ route('create') }}" class="btn btbt btn-lg pull-xs-right btn-primary create">
               Create
+          </a>
+          <a href="{{ route('reset') }}" class="btn btn-lg pull-xs-right btn-primary create">
+          session
+        </a>
+        @else
+          <a href="{{ route('signin.page') }}" class="btn btbt btn-lg pull-xs-right btn-primary create">
+              SignIn
+          </a>
+          <a href="{{ route('signup.page') }}" class="btn btn-lg pull-xs-right btn-primary create">
+              SignUp
           </a>
         @endif
         <a href="{{ route('reset') }}" class="btn btn-lg pull-xs-right btn-primary create">
