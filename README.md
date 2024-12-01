@@ -1,0 +1,5 @@
+アプレンティスのterm5の課題です。
+
+実行環境としてdockerのappコンテナとdbコンテナを使用しています
+
+appコンテナを開き/var/www/html/laravelへ移動しphp artisan serveを実行して表示されたurl/homeに移動してください
